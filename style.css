@@ -1,0 +1,169 @@
+:root {
+  --primary-1-color: #ffffff;
+  --primary-2-color: #ffebc7;
+  --primary-font-color: #000000;
+}
+
+@font-face {
+  font-family: 'Momo';
+  src: url('./fonts/MomoTrustDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Momo';
+}
+
+header{
+    position:fixed;
+    background-color: rgb(0, 0, 0,0.2);
+    width: 100%;
+    z-index: 9999;
+    
+}
+
+header h1{
+    margin: 0;
+    padding-left: 0.5em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    box-sizing: border-box;
+}
+
+.navComponent{
+    height: 100%;
+    display: flex;
+}
+
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+    color: var(--primary-font-color);
+    text-decoration: none;
+    width: 4em;
+}
+
+nav a:hover{
+    background-color: rgb(0, 0, 0,0.3);
+    color: var(--primary-1-color);
+    text-decoration: underline;
+    transition: 0.2s linear;
+}
+
+
+main section{
+    height: 100vh;
+    width: 100vw;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+main section:nth-child(even) {
+  background-color: var(--primary-2-color);
+}
+
+main section:nth-child(odd) {
+  background-color: var(--primary-1-color);
+}
+
+#Home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Home div{
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#Home h1 {
+  font-size: 3em;
+  margin: 0;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: 1s ease-out;
+}
+
+
+#Home p {
+  text-align: left;
+  font-size: large;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: 1s ease-out;
+}
+
+
+#Home.animate p,
+#Home.animate h1,
+#Home.animate .homePhoto{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+.homePhoto{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    background-position: center center;
+    transform: translateX(50px);
+    opacity: 0;
+    transition:  1s ease-out;
+}
+
+.homePhoto img{
+    width: 40vw;
+    aspect-ratio: 1/1;
+}
+
+@media (max-width:750px) {
+    .homePhoto{
+        width: 100vw;
+        overflow: hidden;
+        height: 30vh;
+    }
+
+    .homePhoto img{
+        height: 100%;
+        aspect-ratio: 1/1;
+        width: auto;
+    }
+    #Home div{
+        max-width: 100% ;
+    }
+
+    #Home h1{
+        font-size: 1.5em;
+    }
+
+    #Home{
+        padding: 3em;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+}
