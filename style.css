@@ -167,16 +167,17 @@ main section p {
 
 
 
-#Home.animate p,
-#Home.animate h1,
-#Home.animate .homePhoto,
-#Profile.animate .infoContainer,
-#Profile.animate .profilePhoto{
+
+#Home div.animate,
+#Home div.animate h1,
+#Home div.animate p,
+#Profile .infoContainer.animate,
+#Profile .profilePhoto.animate{
     opacity: 1;
     transform: translateX(0);
 }
 
-#Profile.animate .profilePhoto .profileDecorate{
+#Profile .profilePhoto.animate .profileDecorate{
     width: 50%;
 }
 
@@ -279,7 +280,7 @@ main section p {
         transition: 1s ease-out;
     }
 
-    #Profile.animate .profilePhoto .profileDecorate{
+    #Profile .profilePhoto.animate .profileDecorate{
         width: 100% !important;
     }
 

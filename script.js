@@ -8,7 +8,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-document.querySelectorAll("#Home, #Profile").forEach(el => observer.observe(el));
+document.querySelectorAll("#Home div, #Profile .infoContainer,#Profile .profilePhoto").forEach(el => observer.observe(el));
 
 
 const container = document.querySelector('.infoContainer');
