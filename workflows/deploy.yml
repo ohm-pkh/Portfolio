@@ -2,23 +2,23 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
 
-permission:
+permissions:
   contents: read
   pages: write
   id-token: write
 
-job:
+jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url}}
-    runs-on: ubunti-lastest
+      url: ${{ steps.deploy.outputs.page_url }}
+    runs-on: ubuntu-latest
 
-    step:
+    steps:
       - name: Checkout repo
-        uses: actions/Checkout@v4
+        uses: actions/checkout@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -28,6 +28,6 @@ job:
         with:
           path: ./
 
-      - name: Deploy to GitHub Pagees
+      - name: Deploy to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
