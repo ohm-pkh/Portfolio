@@ -356,7 +356,7 @@ main section p {
     }
 
     main section {
-        padding: 3em;
+        padding: 3em 1em;
         justify-content: center;
         align-items: start;
         flex-direction: column;
