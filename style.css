@@ -33,7 +33,7 @@ header {
 
 }
 
-.profileDecorate{
+.profileDecorate {
     background-color: white;
     max-width: 100%;
     aspect-ratio: 1/1;
@@ -83,7 +83,7 @@ main section {
     width: 100vw;
     padding: 2em;
     box-sizing: border-box;
-    text-align:left;
+    text-align: left;
 }
 
 main section:nth-child(even) {
@@ -120,7 +120,7 @@ main section p {
 
 #Home h1,
 #Home p,
-.profilePhoto{
+.profilePhoto {
     opacity: 0;
     transform: translateX(-50px);
     transition: 1s ease-out;
@@ -132,7 +132,7 @@ main section p {
     font-size: large;
 }
 
-#Profile .infoContainer{
+#Profile .infoContainer {
     display: flex;
     flex-direction: row;
     max-width: 40vw;
@@ -140,7 +140,7 @@ main section p {
     overflow: hidden;
 }
 
-#Profile .infoContainer div{
+#Profile .infoContainer div {
     min-width: 40vw;
 }
 
@@ -172,19 +172,19 @@ main section p {
 #Home div.animate h1,
 #Home div.animate p,
 #Profile .infoContainer.animate,
-#Profile .profilePhoto.animate{
+#Profile .profilePhoto.animate {
     opacity: 1;
     transform: translateX(0);
 }
 
-#Profile .profilePhoto.animate .profileDecorate{
+#Profile .profilePhoto.animate .profileDecorate {
     width: 50%;
 }
 
 
 
 .homePhoto,
-#Profile .infoContainer{
+#Profile .infoContainer {
     transform: translateX(50px);
     opacity: 0;
     transition: 1s ease-out;
@@ -208,8 +208,91 @@ main section p {
     max-height: 80vh;
 }
 
-#Profile h3{
+#Profile h3 {
     margin: 0;
+}
+
+#projectScrollingContainer {
+    width: fit-content;
+    height: 100%;
+    /* or any fixed height you like */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    gap: 1em;
+    overflow-y: auto;
+    padding: 1em;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#projectScrollingContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.projectCard {
+    width: 100%;
+    padding: 1em;
+    height: 30em;
+    box-sizing: border-box;
+    background-color: var(--primary-2-color);
+    border-radius: 2em;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.projectCard h3{
+    text-align: center;
+}
+
+.projectCard p{
+    max-height: 15em;
+    overflow-y: hidden;
+    overflow-wrap: break-word;
+}
+
+.projectCard .state{
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 0.5em;
+    border-radius: 0.4em;
+}
+
+.projectCard .state.Ended{
+    background-color: #555;
+    color: white;
+}
+
+.projectCard .state.Test{
+    background-color: #3bb4ff;
+    color: white;
+}
+
+.projectCard .state.Demo{
+    background-color: #45ff86;
+    color: white;
+}
+
+.projectCard .state.Planing{
+    background-color: #cf31ff;
+    color: white;
+}
+
+.projectCard .state.Design{
+    background-color: #e7ff31;
+    color: white;
+}
+
+.projectCard .state.Dev{
+    background-color: #3138ff;
+    color: white;
+}
+
+.projectCard .state.Hold{
+    background-color: #ff3131;
+    color: white;
 }
 
 @media (max-width:800px) {
@@ -236,35 +319,40 @@ main section p {
         width: auto;
     }
 
-    #Profile .photoContainer{
+    #Profile .photoContainer {
         overflow: hidden;
         justify-content: start;
         height: 30vh;
     }
 
-    #Profile .infoContainer{
+    #Profile .infoContainer {
         max-width: 100vw;
     }
-    #Profile .infoContainer div{
+
+    #Profile .infoContainer div {
         min-width: fit-content;
     }
 
-    .navDots{
+    .navDots {
         display: none !important;
     }
 
     #Home div,
-    #Profile div{
+    #Profile div {
         width: 100%;
     }
 
-    #otherInfo{
+    #otherInfo {
         display: none !important;
     }
 
     main section h1 {
         font-size: 1.3em;
-        margin: 1em auto;
+        margin: 0.5em auto;
+    }
+
+    #basicInfo p {
+        font-size: 0.8em;
     }
 
     main section {
@@ -275,13 +363,37 @@ main section p {
         text-align: center;
     }
 
-    .profileDecorate{
+    .profileDecorate {
         width: 50% !important;
         transition: 1s ease-out;
     }
 
-    #Profile .profilePhoto.animate .profileDecorate{
+    #Profile .profilePhoto.animate .profileDecorate {
         width: 100% !important;
     }
+
+    #projectScrollingContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 1em;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        box-sizing: border-box;
+        align-items: center;
+        padding: 0;
+    }
+
+    .projectCard {
+        min-width: 70vw;
+        max-width: 70vw;
+        padding: 1em;
+        max-height: 80vh;
+        min-height: 80vh;
+        box-sizing: border-box;
+        background-color: var(--primary-2-color);
+        border-radius: 2em;
+    }
+
 
 }
