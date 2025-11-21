@@ -130,6 +130,7 @@ main section p {
 #Home p {
     margin: 1em;
     font-size: large;
+    color: red;
 }
 
 #Profile .infoContainer {
