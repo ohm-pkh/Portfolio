@@ -372,6 +372,10 @@ main section p {
         width: 100% !important;
     }
 
+    #Profile br{
+        height: 0.5em;
+    }
+
     #projectScrollingContainer {
         width: 100%;
         height: 100%;
@@ -385,7 +389,7 @@ main section p {
     }
 
     .projectCard {
-        min-width: 70vw;
+        min-width: 80vw;
         max-width: 70vw;
         padding: 1em;
         max-height: 80vh;
@@ -393,6 +397,7 @@ main section p {
         box-sizing: border-box;
         background-color: var(--primary-2-color);
         border-radius: 2em;
+        text-align: left;
     }
 
 

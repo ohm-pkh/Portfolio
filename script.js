@@ -74,7 +74,9 @@ dots.forEach(dot => {
 
 const MovieTicketBookingSystem = new Project("Movie ticket booking system",
                                                 `Developed a web-based movie ticket 
-                                                booking system using HTML, CSS, and
+                                                booking system that include booking part and
+                                                system management part by
+                                                using HTML, CSS, and
                                                 JavaScript for the frontend, and Node.js
                                                 with Express.js for the backend, with PostgreSQL 
                                                 for the database. Performed full-stack development,
@@ -82,27 +84,49 @@ const MovieTicketBookingSystem = new Project("Movie ticket booking system",
                                                 `Ended`
                                               );
 const FraudDetectionProject = new Project("Fraud detection project",
-                                          `Performed dataset discovery, preprocessing,
-                                          and EDA for a team project developing fraud
-                                          detection visualizations and a classification
-                                          model using SAR State from FinCEN.gov and
-                                          opensource dataset Kaggle data.`,
+                                          `This project was created to address the problem of 
+                                          fraudulent transactions. My team and I developed data 
+                                          visualizations to explore fraud patterns and built a 
+                                          classification model to detect fraudulent transactions.
+                                          In this project, I was responsible for dataset 
+                                          discovery, data preprocessing, and exploratory 
+                                          data analysis (EDA). We used SAR data from 
+                                          FinCEN.gov along with open-source datasets 
+                                          from Kaggle to support our analysis and model development.`,
                                           `Ended`
                                         );
 const WanNeeGinaraiDee = new Project("Wan nee gin arai dee system",
-                                      `Developed a web-based restaurant finding
-                                      system using React for the frontend, 
-                                      Node.js with Express.js for the backend, 
-                                      and PostgreSQL for the database. Performed 
-                                      full-stack development, including database 
-                                      and resource management, UX/UI design, 
-                                      test planning and documentation.`,
-                                      `Test`
+                                      `From the Daily question like "What should we/I eat?"
+                                      that almost burn our break time or sometime it can be the cause
+                                      that make conflict in relationship. This project are create for
+                                      help people answer this question easier to save break time
+                                      , stay relationship and help people make decision easier by provide
+                                      some of decision making tools and unique feature`,
+                                      `Demo`
                                     );
-const projectContainer = new ProjectArr(MovieTicketBookingSystem);
+
+const BuyingNote = new Project("Buying Note",
+                                      `This project is created from the problem 
+                                      that I often forget to buy some items that 
+                                      were already listed in the chat. And when 
+                                      people assign buying notes in a group, it 
+                                      sometimes causes repeated purchases. So this 
+                                      project is made to solve that by giving the 
+                                      ability to create buying orders, track the 
+                                      order status, and share them with others.`,
+                                      `Hold`
+                                    );
+const MymeiProject = new Project("E-commerce management system",
+                                      `Developed a web-based e-commerce management 
+                                      system using HTML, CSS, and JavaScript for the 
+                                      frontend, and PHP for the backend, with MySQL 
+                                      for the database. Performed full-stack development.`,
+                                      `Ended`
+                                    );
+const projectContainer = new ProjectArr(MymeiProject);
+projectContainer.append(MovieTicketBookingSystem);
 projectContainer.append(FraudDetectionProject);
+projectContainer.append(BuyingNote);
 projectContainer.append(WanNeeGinaraiDee);
-
-
 
 projectContainer.createContainer("projectScrollingContainer");
