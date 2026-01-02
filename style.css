@@ -447,7 +447,7 @@ main section p {
         text-align: left;
     }
     .projectCard p{
-        font-size: 1em;
+        font-size: 0.8em;
         min-height: 15em;
         max-height: 22em;
     }
