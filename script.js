@@ -31,10 +31,10 @@ class ProjectArr {
   findNextBlank(txt,init){
     if (txt.length <= init) return txt;
     let i = init
-    while (txt[init] !== ' '){
+    while (txt[i] !== ' ' && i < txt.length){
       i += 1
     }
-    return txt.slice(0,init)
+    return txt.slice(0,i)
   }
 
   createContainer(id){
@@ -142,5 +142,4 @@ projectContainer.append(MovieTicketBookingSystem);
 projectContainer.append(FraudDetectionProject);
 projectContainer.append(BuyingNote);
 projectContainer.append(WanNeeGinaraiDee);
-
 projectContainer.createContainer("projectScrollingContainer");
