@@ -245,21 +245,34 @@ main section p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+
 .projectCard h3{
     text-align: center;
+    text-overflow: ellipsis;
+    height: 2em;
 }
 
 .projectCard p{
-    max-height: 15em;
-    overflow-y: hidden;
-    overflow-wrap: break-word;
+    height: 100%;   
+    font-size: 0.8em;   
+}
+
+.projectCard .stateContainer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    box-sizing: border-box;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    width: 100%;
+    background-color: var(--primary-2-color);
+    display: flex;
+    justify-content: center;
 }
 
 .projectCard .state{
-    position: absolute;
     bottom: 1em;
-    left: 50%;
-    transform: translateX(-50%);
     padding: 0 0.5em;
     border-radius: 0.4em;
 }
@@ -299,6 +312,20 @@ main section p {
     color: white;
 }
 
+.projectCard .projectImage{
+    background-color: #dbd7d7;
+    border: 1px solid #bbb;
+    height: 10em;
+    color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
 @media (max-width:800px) {
     header h1 {
         display: none;
@@ -334,7 +361,7 @@ main section p {
     }
 
     #Profile .infoContainer div {
-        min-width: fit-content;
+        width: fit-content;
     }
 
     .navDots {
@@ -402,6 +429,11 @@ main section p {
         background-color: var(--primary-2-color);
         border-radius: 2em;
         text-align: left;
+    }
+    .projectCard p{
+        font-size: 1em;
+        min-height: 15em;
+        max-height: 22em;
     }
 
 
