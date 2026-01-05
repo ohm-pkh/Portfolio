@@ -104,7 +104,7 @@ dots.forEach(dot => {
 });
 
 
-const MovieTicketBookingSystem = new Project("Movie ticket booking system", `/assets/img/projectImg/Booking_cover.png`,
+const MovieTicketBookingSystem = new Project("Movie ticket booking system", null,
   `Developed a web-based movie ticket 
                                                 booking system that include booking part and
                                                 system management part by
