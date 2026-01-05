@@ -66,6 +66,8 @@ class ProjectArr {
       if (p.link) {
         obj.style.cursor = 'pointer';
         obj.onclick = () => window.open(p.link, '_blank');
+      }else{
+        obj.style.cursor = 'default';
       }
 
       container.appendChild(obj);
@@ -102,7 +104,7 @@ dots.forEach(dot => {
 });
 
 
-const MovieTicketBookingSystem = new Project("Movie ticket booking system", null,
+const MovieTicketBookingSystem = new Project("Movie ticket booking system", `/assets/img/projectImg/Booking_cover.png`,
   `Developed a web-based movie ticket 
                                                 booking system that include booking part and
                                                 system management part by
@@ -123,7 +125,7 @@ const FraudDetectionProject = new Project("Fraud detection project", null,
                                           data analysis (EDA). We used SAR data from 
                                           FinCEN.gov along with open-source datasets 
                                           from Kaggle to support our analysis and model development.`,
-  `Ended`
+  `Ended`,'/assets/Docs/eiei_DataModel_Report.pdf'
 );
 const WanNeeGinaraiDee = new Project("Wan nee gin arai dee system", null,
   `From the Daily question like "What should we/I eat?"
@@ -132,11 +134,11 @@ const WanNeeGinaraiDee = new Project("Wan nee gin arai dee system", null,
                                       help people answer this question easier to save break time
                                       , stay relationship and help people make decision easier by provide
                                       some of decision making tools and unique feature`,
-  `Ended`
+  `Ended`,`https://drive.google.com/drive/folders/1gHzA8Ztzlbwi_y10wvVEvZp1jrURfdUv?usp=sharing`
 );
 
 const BuyingNote = new Project("Buying Note", null,
-  `This project is created from the problem 
+  `This project is created from the problem   
                                       that I often forget to buy some items that 
                                       were already listed in the chat. And when 
                                       people assign buying notes in a group, it 
