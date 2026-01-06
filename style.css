@@ -341,6 +341,16 @@ main section p {
 
 }
 
+.contactPhone{
+    display: none !important;
+    height: 3em;
+}
+
+.contactPhone span a img{
+    max-height: 1.5em;
+    aspect-ratio: 1/1;
+}
+
 @media (max-width:800px) {
     header h1 {
         display: none;
@@ -449,6 +459,14 @@ main section p {
         font-size: 0.8em;
         min-height: 15em;
         max-height: 22em;
+    }
+
+    .contactPhone{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 100% !important;
     }
 
 
