@@ -58,6 +58,7 @@ nav {
 .navComponent {
     height: 100%;
     display: flex;
+    margin:0 1em 0 1em
 }
 
 nav a {
@@ -360,6 +361,7 @@ main section p {
         display: flex;
         width: 100vw;
         justify-content: space-around;
+        margin: 0;
     }
 
     .homePhoto {
