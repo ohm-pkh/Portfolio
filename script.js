@@ -127,7 +127,7 @@ const FraudDetectionProject = new Project("Fraud detection project", null,
                                           from Kaggle to support our analysis and model development.`,
   `Ended`,'/assets/Docs/eiei_DataModel_Report.pdf'
 );
-const WanNeeGinaraiDee = new Project("Wan nee gin arai dee system", null,
+const WanNeeGinaraiDee = new Project("Wan nee gin arai dee system", './assets/img/projectCover/WanNeeGinARaiDee.png',
   `From the Daily question like "What should we/I eat?"
                                       that almost burn our break time or sometime it can be the cause
                                       that make conflict in relationship. This project are create for
