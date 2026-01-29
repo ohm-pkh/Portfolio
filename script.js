@@ -137,7 +137,7 @@ const WanNeeGinaraiDee = new Project("Wan nee gin arai dee system", './assets/im
   `Ended`,`https://drive.google.com/drive/folders/1gHzA8Ztzlbwi_y10wvVEvZp1jrURfdUv?usp=sharing`
 );
 
-const BuyingNote = new Project("Buying Note", null,
+const BuyingNote = new Project("Buying Note", './assets/img/projectCover/buyingNote.png',
   `This project is created from the problem   
                                       that I often forget to buy some items that 
                                       were already listed in the chat. And when 
@@ -146,7 +146,7 @@ const BuyingNote = new Project("Buying Note", null,
                                       project is made to solve that by giving the 
                                       ability to create buying orders, track the 
                                       order status, and share them with others.`,
-  `Hold`
+  `Hold`,`https://www.figma.com/proto/amgA8iVrrborhrdpJ2SSFE/buying_note_project?node-id=0-1&t=LTZBZePBwL9KyCDB-1`
 );
 const MymeiProject = new Project("E-commerce management system", null,
   `Developed a web-based e-commerce management 
