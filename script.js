@@ -115,7 +115,7 @@ const MovieTicketBookingSystem = new Project("Movie ticket booking system", "./a
                                                 including UX/UI and database design.`,
   `Ended`, `https://drive.google.com/drive/folders/15NbVBP_vAA3VWONvvYxmTIXx3gTeiY80?usp=sharing`
 );
-const FraudDetectionProject = new Project("Fraud detection project", null,
+const FraudDetectionProject = new Project("Fraud detection project", "./assets/img/projectCover/fraudDetection.png",
   `This project was created to address the problem of 
                                           fraudulent transactions. My team and I developed data 
                                           visualizations to explore fraud patterns and built a 
