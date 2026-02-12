@@ -104,7 +104,7 @@ dots.forEach(dot => {
 });
 
 
-const MovieTicketBookingSystem = new Project("Movie ticket booking system", null,
+const MovieTicketBookingSystem = new Project("Movie ticket booking system", "./assets/img/projectCover/movieBooking.jpg",
   `Developed a web-based movie ticket 
                                                 booking system that include booking part and
                                                 system management part by
@@ -115,7 +115,7 @@ const MovieTicketBookingSystem = new Project("Movie ticket booking system", null
                                                 including UX/UI and database design.`,
   `Ended`, `https://drive.google.com/drive/folders/15NbVBP_vAA3VWONvvYxmTIXx3gTeiY80?usp=sharing`
 );
-const FraudDetectionProject = new Project("Fraud detection project", null,
+const FraudDetectionProject = new Project("Fraud detection project", "./assets/img/projectCover/fraudDetection.png",
   `This project was created to address the problem of 
                                           fraudulent transactions. My team and I developed data 
                                           visualizations to explore fraud patterns and built a 
@@ -127,7 +127,7 @@ const FraudDetectionProject = new Project("Fraud detection project", null,
                                           from Kaggle to support our analysis and model development.`,
   `Ended`,'/assets/Docs/eiei_DataModel_Report.pdf'
 );
-const WanNeeGinaraiDee = new Project("Wan nee gin arai dee system", null,
+const WanNeeGinaraiDee = new Project("Wan nee gin arai dee system", './assets/img/projectCover/WanNeeGinARaiDee.png',
   `From the Daily question like "What should we/I eat?"
                                       that almost burn our break time or sometime it can be the cause
                                       that make conflict in relationship. This project are create for
@@ -137,7 +137,7 @@ const WanNeeGinaraiDee = new Project("Wan nee gin arai dee system", null,
   `Ended`,`https://drive.google.com/drive/folders/1gHzA8Ztzlbwi_y10wvVEvZp1jrURfdUv?usp=sharing`
 );
 
-const BuyingNote = new Project("Buying Note", null,
+const BuyingNote = new Project("Buying Note", './assets/img/projectCover/buyingNote.png',
   `This project is created from the problem   
                                       that I often forget to buy some items that 
                                       were already listed in the chat. And when 
@@ -146,17 +146,17 @@ const BuyingNote = new Project("Buying Note", null,
                                       project is made to solve that by giving the 
                                       ability to create buying orders, track the 
                                       order status, and share them with others.`,
-  `Hold`
+  `Hold`,`https://www.figma.com/proto/amgA8iVrrborhrdpJ2SSFE/buying_note_project?node-id=0-1&t=LTZBZePBwL9KyCDB-1`
 );
-const MymeiProject = new Project("E-commerce management system", null,
-  `Developed a web-based e-commerce management 
-                                      system using HTML, CSS, and JavaScript for the 
-                                      frontend, and PHP for the backend, with MySQL 
-                                      for the database. Performed full-stack development.`,
-  `Ended`
-);
-const projectContainer = new ProjectArr(MymeiProject);
-projectContainer.append(MovieTicketBookingSystem);
+// const MymeiProject = new Project("E-commerce management system", null,
+//   `Developed a web-based e-commerce management 
+//                                       system using HTML, CSS, and JavaScript for the 
+//                                       frontend, and PHP for the backend, with MySQL 
+//                                       for the database. Performed full-stack development.`,
+//   `Ended`
+// );
+const projectContainer = new ProjectArr(MovieTicketBookingSystem);
+// projectContainer.append(MovieTicketBookingSystem);
 projectContainer.append(FraudDetectionProject);
 projectContainer.append(BuyingNote);
 projectContainer.append(WanNeeGinaraiDee);
