@@ -148,15 +148,15 @@ const BuyingNote = new Project("Buying Note", './assets/img/projectCover/buyingN
                                       order status, and share them with others.`,
   `Hold`,`https://www.figma.com/proto/amgA8iVrrborhrdpJ2SSFE/buying_note_project?node-id=0-1&t=LTZBZePBwL9KyCDB-1`
 );
-const MymeiProject = new Project("E-commerce management system", null,
-  `Developed a web-based e-commerce management 
-                                      system using HTML, CSS, and JavaScript for the 
-                                      frontend, and PHP for the backend, with MySQL 
-                                      for the database. Performed full-stack development.`,
-  `Ended`
-);
-const projectContainer = new ProjectArr(MymeiProject);
-projectContainer.append(MovieTicketBookingSystem);
+// const MymeiProject = new Project("E-commerce management system", null,
+//   `Developed a web-based e-commerce management 
+//                                       system using HTML, CSS, and JavaScript for the 
+//                                       frontend, and PHP for the backend, with MySQL 
+//                                       for the database. Performed full-stack development.`,
+//   `Ended`
+// );
+const projectContainer = new ProjectArr(MovieTicketBookingSystem);
+// projectContainer.append(MovieTicketBookingSystem);
 projectContainer.append(FraudDetectionProject);
 projectContainer.append(BuyingNote);
 projectContainer.append(WanNeeGinaraiDee);
